@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -166,11 +167,42 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="emptyView" destination="GEh-tA-rCE" id="Cnd-3k-4Ll"/>
                         <outlet property="searchBarView" destination="FAM-24-G0o" id="psR-ZX-j80"/>
                         <segue destination="Ztx-WL-Xxv" kind="show" identifier="restaurantMenu" id="r5n-3n-c0D"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6JV-52-i95" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="GEh-tA-rCE">
+                    <rect key="frame" x="0.0" y="0.0" width="417" height="372"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="HHN-MJ-JEi">
+                            <rect key="frame" x="88.5" y="86.5" width="240" height="199"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading-menu-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="plA-FT-J5p">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="240" id="8NJ-3l-6qT"/>
+                                        <constraint firstAttribute="height" constant="128" id="ves-kD-wWg"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fetching restaurants..  Please wait" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToL-Vq-t8P">
+                                    <rect key="frame" x="35" y="158" width="170.5" height="41"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="x3P-19-ewi"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="HHN-MJ-JEi" firstAttribute="centerY" secondItem="GEh-tA-rCE" secondAttribute="centerY" id="9dI-DR-l9h"/>
+                        <constraint firstItem="HHN-MJ-JEi" firstAttribute="centerX" secondItem="GEh-tA-rCE" secondAttribute="centerX" id="qcW-KB-Ebe"/>
+                    </constraints>
+                </view>
             </objects>
             <point key="canvasLocation" x="2005.7971014492755" y="75"/>
         </scene>
@@ -604,6 +636,7 @@
         <image name="clock" catalog="system" width="128" height="121"/>
         <image name="flame" catalog="system" width="108" height="128"/>
         <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="loading-menu-placeholder" width="1128" height="645"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

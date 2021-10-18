@@ -11,7 +11,8 @@ class RestaurantsTableViewController: UITableViewController {
 
     // MARK: - Outlets
 
-    @IBOutlet weak var searchBarView: UISearchBar!
+    @IBOutlet var emptyView: UIView!
+    @IBOutlet private weak var searchBarView: UISearchBar!
 
     // MARK: - View life cycle
 
@@ -20,6 +21,20 @@ class RestaurantsTableViewController: UITableViewController {
 
         self.searchBarView.backgroundImage = UIImage()
         self.navigationController?.setTintColor(.black)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setFooterView()
+    }
+
+    // MARK: - Methods
+
+    private func setFooterView() {
+        let safeArea = 200 +
+        self.navigationController!.navigationBar.frame.height + 70 // 70 header size
+        emptyView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height - safeArea)
+        tableView.tableFooterView = emptyView
     }
 
     // MARK: - Actions
@@ -38,7 +53,7 @@ extension RestaurantsTableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -81,4 +96,21 @@ extension RestaurantsTableViewController: SegueHandlerType {
              */
         }
     }
+}
+
+extension UIApplication {
+
+    var keyWindow: UIWindow? {
+        // Get connected scenes
+        return UIApplication.shared.connectedScenes
+            // Keep only active scenes, onscreen and visible to the user
+            .filter { $0.activationState == .foregroundActive }
+            // Keep only the first `UIWindowScene`
+            .first(where: { $0 is UIWindowScene })
+            // Get its associated windows
+            .flatMap({ $0 as? UIWindowScene })?.windows
+            // Finally, keep only the key window
+            .first(where: \.isKeyWindow)
+    }
+
 }
