@@ -17,6 +17,12 @@
 		526A1455271DF8FF00AF77B6 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A1454271DF8FF00AF77B6 /* StoryboardIdentifiable.swift */; };
 		526A1458271DF97900AF77B6 /* UIExtendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A1457271DF97900AF77B6 /* UIExtendedView.swift */; };
 		526A145A271DF98A00AF77B6 /* UIRoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A1459271DF98A00AF77B6 /* UIRoundedView.swift */; };
+		526A145C271E01DC00AF77B6 /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A145B271E01DC00AF77B6 /* MenuItemTableViewCell.swift */; };
+		526A145E271E02F100AF77B6 /* RestaurantMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A145D271E02F100AF77B6 /* RestaurantMenuTableViewController.swift */; };
+		526A1460271E049F00AF77B6 /* MenuItemDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A145F271E049F00AF77B6 /* MenuItemDetailsTableViewController.swift */; };
+		526A1462271E12B800AF77B6 /* UINavigationController+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A1461271E12B800AF77B6 /* UINavigationController+colors.swift */; };
+		526A1464271E148C00AF77B6 /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A1463271E148C00AF77B6 /* SegueHandlerType.swift */; };
+		526A1467271E195A00AF77B6 /* SystemIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A1466271E195A00AF77B6 /* SystemIcons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		526A1454271DF8FF00AF77B6 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
 		526A1457271DF97900AF77B6 /* UIExtendedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtendedView.swift; sourceTree = "<group>"; };
 		526A1459271DF98A00AF77B6 /* UIRoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRoundedView.swift; sourceTree = "<group>"; };
+		526A145B271E01DC00AF77B6 /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
+		526A145D271E02F100AF77B6 /* RestaurantMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMenuTableViewController.swift; sourceTree = "<group>"; };
+		526A145F271E049F00AF77B6 /* MenuItemDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailsTableViewController.swift; sourceTree = "<group>"; };
+		526A1461271E12B800AF77B6 /* UINavigationController+colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+colors.swift"; sourceTree = "<group>"; };
+		526A1463271E148C00AF77B6 /* SegueHandlerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueHandlerType.swift; sourceTree = "<group>"; };
+		526A1466271E195A00AF77B6 /* SystemIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemIcons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +80,9 @@
 				526A1437271DEF6E00AF77B6 /* AppDelegate.swift */,
 				526A1439271DEF6E00AF77B6 /* SceneDelegate.swift */,
 				526A144E271DF78700AF77B6 /* Views */,
-				526A144D271DF14500AF77B6 /* Controllers */,
+				526A144D271DF14500AF77B6 /* ViewControllers */,
 				526A144C271DF13500AF77B6 /* Storyboards */,
+				526A1465271E194900AF77B6 /* Statics */,
 				526A1453271DF8F400AF77B6 /* Helpers */,
 				526A1456271DF96B00AF77B6 /* GUI */,
 				526A1440271DEF7000AF77B6 /* Assets.xcassets */,
@@ -94,18 +107,21 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		526A144D271DF14500AF77B6 /* Controllers */ = {
+		526A144D271DF14500AF77B6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				526A1451271DF80800AF77B6 /* RestaurantsTableViewController.swift */,
+				526A145D271E02F100AF77B6 /* RestaurantMenuTableViewController.swift */,
+				526A145F271E049F00AF77B6 /* MenuItemDetailsTableViewController.swift */,
 			);
-			path = Controllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		526A144E271DF78700AF77B6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				526A144F271DF7A700AF77B6 /* RestaurantTableViewCell.swift */,
+				526A145B271E01DC00AF77B6 /* MenuItemTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -114,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				526A1454271DF8FF00AF77B6 /* StoryboardIdentifiable.swift */,
+				526A1461271E12B800AF77B6 /* UINavigationController+colors.swift */,
+				526A1463271E148C00AF77B6 /* SegueHandlerType.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -125,6 +143,14 @@
 				526A1459271DF98A00AF77B6 /* UIRoundedView.swift */,
 			);
 			path = GUI;
+			sourceTree = "<group>";
+		};
+		526A1465271E194900AF77B6 /* Statics */ = {
+			isa = PBXGroup;
+			children = (
+				526A1466271E195A00AF77B6 /* SystemIcons.swift */,
+			);
+			path = Statics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,10 +226,16 @@
 			files = (
 				526A1450271DF7A700AF77B6 /* RestaurantTableViewCell.swift in Sources */,
 				526A1438271DEF6E00AF77B6 /* AppDelegate.swift in Sources */,
+				526A1460271E049F00AF77B6 /* MenuItemDetailsTableViewController.swift in Sources */,
 				526A1452271DF80800AF77B6 /* RestaurantsTableViewController.swift in Sources */,
+				526A1467271E195A00AF77B6 /* SystemIcons.swift in Sources */,
+				526A145E271E02F100AF77B6 /* RestaurantMenuTableViewController.swift in Sources */,
 				526A143A271DEF6E00AF77B6 /* SceneDelegate.swift in Sources */,
 				526A1455271DF8FF00AF77B6 /* StoryboardIdentifiable.swift in Sources */,
+				526A145C271E01DC00AF77B6 /* MenuItemTableViewCell.swift in Sources */,
+				526A1462271E12B800AF77B6 /* UINavigationController+colors.swift in Sources */,
 				526A1458271DF97900AF77B6 /* UIExtendedView.swift in Sources */,
+				526A1464271E148C00AF77B6 /* SegueHandlerType.swift in Sources */,
 				526A145A271DF98A00AF77B6 /* UIRoundedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
