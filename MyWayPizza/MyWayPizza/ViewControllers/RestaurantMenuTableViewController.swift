@@ -48,7 +48,7 @@ extension RestaurantMenuTableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
         let menuCell: MenuItemTableViewCell = tableView.dequeueReusableCell()
         return menuCell
     }

@@ -10,7 +10,7 @@ import UIKit
 class MenuItemDetailsTableViewController: UITableViewController {
 
     // MARK: - Properties
-    
+
     var isFavourite: Bool = false // should be inside viewModel
 
     // MARK: - View life cycle
@@ -35,7 +35,6 @@ class MenuItemDetailsTableViewController: UITableViewController {
         addFavouriteNavigationItem()
     }
 }
-
 
 // MARK: - TableView Datasource & Delegates
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22F6590F96C3D49F7309B404 /* Pods_MyWayPizza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B001E97E1BE68EA285C7EF /* Pods_MyWayPizza.framework */; };
 		526A1438271DEF6E00AF77B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A1437271DEF6E00AF77B6 /* AppDelegate.swift */; };
 		526A143A271DEF6E00AF77B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A1439271DEF6E00AF77B6 /* SceneDelegate.swift */; };
 		526A143F271DEF6E00AF77B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526A143D271DEF6E00AF77B6 /* Main.storyboard */; };
@@ -23,9 +24,12 @@
 		526A1462271E12B800AF77B6 /* UINavigationController+colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A1461271E12B800AF77B6 /* UINavigationController+colors.swift */; };
 		526A1464271E148C00AF77B6 /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A1463271E148C00AF77B6 /* SegueHandlerType.swift */; };
 		526A1467271E195A00AF77B6 /* SystemIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A1466271E195A00AF77B6 /* SystemIcons.swift */; };
+		52F93629271E277C00B63F3A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 52F93628271E277C00B63F3A /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02B001E97E1BE68EA285C7EF /* Pods_MyWayPizza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWayPizza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F0677FC5A6641DC638A1483 /* Pods-MyWayPizza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWayPizza.debug.xcconfig"; path = "Target Support Files/Pods-MyWayPizza/Pods-MyWayPizza.debug.xcconfig"; sourceTree = "<group>"; };
 		526A1434271DEF6E00AF77B6 /* MyWayPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWayPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		526A1437271DEF6E00AF77B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		526A1439271DEF6E00AF77B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +48,8 @@
 		526A1461271E12B800AF77B6 /* UINavigationController+colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+colors.swift"; sourceTree = "<group>"; };
 		526A1463271E148C00AF77B6 /* SegueHandlerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueHandlerType.swift; sourceTree = "<group>"; };
 		526A1466271E195A00AF77B6 /* SystemIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemIcons.swift; sourceTree = "<group>"; };
+		52F93628271E277C00B63F3A /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		E5F7170556B7985A55879CF9 /* Pods-MyWayPizza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWayPizza.release.xcconfig"; path = "Target Support Files/Pods-MyWayPizza/Pods-MyWayPizza.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F6590F96C3D49F7309B404 /* Pods_MyWayPizza.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,8 +67,11 @@
 		526A142B271DEF6E00AF77B6 = {
 			isa = PBXGroup;
 			children = (
+				52F93628271E277C00B63F3A /* .swiftlint.yml */,
 				526A1436271DEF6E00AF77B6 /* MyWayPizza */,
 				526A1435271DEF6E00AF77B6 /* Products */,
+				9D32B23A6556E3CB29B8172C /* Pods */,
+				6771153B6E247327A74E3F9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +163,23 @@
 			path = Statics;
 			sourceTree = "<group>";
 		};
+		6771153B6E247327A74E3F9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02B001E97E1BE68EA285C7EF /* Pods_MyWayPizza.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D32B23A6556E3CB29B8172C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F0677FC5A6641DC638A1483 /* Pods-MyWayPizza.debug.xcconfig */,
+				E5F7170556B7985A55879CF9 /* Pods-MyWayPizza.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 526A1448271DEF7000AF77B6 /* Build configuration list for PBXNativeTarget "MyWayPizza" */;
 			buildPhases = (
+				CA462DE0DC1D9AA11A8AE7D4 /* [CP] Check Pods Manifest.lock */,
 				526A1430271DEF6E00AF77B6 /* Sources */,
 				526A1431271DEF6E00AF77B6 /* Frameworks */,
 				526A1432271DEF6E00AF77B6 /* Resources */,
+				F81A97D410F51752166D8C65 /* [CP] Embed Pods Frameworks */,
+				52F9362B271E2AEA00B63F3A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -211,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F93629271E277C00B63F3A /* .swiftlint.yml in Resources */,
 				526A1444271DEF7000AF77B6 /* LaunchScreen.storyboard in Resources */,
 				526A1441271DEF7000AF77B6 /* Assets.xcassets in Resources */,
 				526A143F271DEF6E00AF77B6 /* Main.storyboard in Resources */,
@@ -218,6 +249,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52F9362B271E2AEA00B63F3A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# SwiftLint\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		CA462DE0DC1D9AA11A8AE7D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyWayPizza-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F81A97D410F51752166D8C65 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyWayPizza/Pods-MyWayPizza-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyWayPizza/Pods-MyWayPizza-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyWayPizza/Pods-MyWayPizza-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		526A1430271DEF6E00AF77B6 /* Sources */ = {
@@ -380,6 +470,7 @@
 		};
 		526A1449271DEF7000AF77B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F0677FC5A6641DC638A1483 /* Pods-MyWayPizza.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -408,6 +499,7 @@
 		};
 		526A144A271DEF7000AF77B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5F7170556B7985A55879CF9 /* Pods-MyWayPizza.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

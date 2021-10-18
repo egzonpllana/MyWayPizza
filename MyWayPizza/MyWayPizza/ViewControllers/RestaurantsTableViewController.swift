@@ -42,11 +42,11 @@ extension RestaurantsTableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
         let restaurantCell: RestaurantTableViewCell = tableView.dequeueReusableCell()
         return restaurantCell
     }
-    
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.tableView.deselectRow(at: indexPath, animated: true)
         // sender: viewModel
