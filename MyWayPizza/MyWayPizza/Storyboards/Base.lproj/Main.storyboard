@@ -192,7 +192,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="HHN-MJ-JEi">
                             <rect key="frame" x="88.5" y="86.5" width="240" height="199"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading-menu-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="plA-FT-J5p">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading-menu-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="plA-FT-J5p">
                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="240" id="8NJ-3l-6qT"/>
@@ -405,7 +405,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="b33-0B-OkQ">
                             <rect key="frame" x="88.5" y="86.5" width="240" height="199"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading-menu-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="muY-JD-1oa">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading-menu-items-placeholder-image" translatesAutoresizingMaskIntoConstraints="NO" id="muY-JD-1oa">
                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="240" id="56z-EE-0ox"/>
@@ -994,6 +994,7 @@
         <image name="clock" catalog="system" width="128" height="121"/>
         <image name="flame" catalog="system" width="108" height="128"/>
         <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="loading-menu-items-placeholder-image" width="1235" height="997"/>
         <image name="loading-menu-placeholder" width="1128" height="645"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
