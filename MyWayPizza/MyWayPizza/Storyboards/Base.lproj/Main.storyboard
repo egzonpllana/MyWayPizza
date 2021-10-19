@@ -58,7 +58,7 @@
                                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xgJ-eb-EnO" userLabel="imageView" customClass="UIRoundedView" customModule="MyWayPizza" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="86" height="86"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3ZP-oG-Erh">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3ZP-oG-Erh">
                                                                     <rect key="frame" x="0.0" y="0.0" width="86" height="86"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="3ZP-oG-Erh" secondAttribute="height" multiplier="1:1" id="E73-f9-8kq"/>
@@ -113,8 +113,8 @@
                                                                                 </label>
                                                                             </subviews>
                                                                         </stackView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSd-lC-fhx">
-                                                                            <rect key="frame" x="241" y="0.0" width="23" height="44.5"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSd-lC-fhx">
+                                                                            <rect key="frame" x="237" y="0.0" width="27" height="44.5"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                                             <color key="textColor" red="0.96470588239999999" green="0.78039215689999997" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                             <nil key="highlightedColor"/>
@@ -156,6 +156,13 @@
                                         <constraint firstItem="oxQ-LX-1Yb" firstAttribute="leading" secondItem="Oi9-ge-G1e" secondAttribute="leading" constant="16" id="pg4-k0-hdV"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="coverImageView" destination="3ZP-oG-Erh" id="SQE-V6-hbc"/>
+                                    <outlet property="firstAddressLabel" destination="dZP-mo-Iwj" id="OKI-5S-Sni"/>
+                                    <outlet property="nameLabel" destination="kcH-GP-dz0" id="095-q0-XYl"/>
+                                    <outlet property="ratingLabel" destination="kSd-lC-fhx" id="zll-n8-aIr"/>
+                                    <outlet property="secondAddressLabel" destination="5g2-Dn-cAG" id="sfP-X0-opA"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -281,7 +288,7 @@
                                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eF5-nx-8CK" userLabel="imageView" customClass="UIRoundedView" customModule="MyWayPizza" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="86" height="86"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yZ6-oc-Ike">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yZ6-oc-Ike">
                                                                     <rect key="frame" x="0.0" y="0.0" width="86" height="86"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="yZ6-oc-Ike" secondAttribute="height" multiplier="1:1" id="7Zy-eN-wWJ"/>
@@ -378,9 +385,40 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="emptyView" destination="3yp-DX-8ME" id="h2M-ao-nyX"/>
                         <segue destination="uEJ-ff-Qbq" kind="show" identifier="restaurantItemDetails" id="hPG-zR-mBV"/>
                     </connections>
                 </tableViewController>
+                <view contentMode="scaleToFill" id="3yp-DX-8ME">
+                    <rect key="frame" x="0.0" y="0.0" width="417" height="372"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="b33-0B-OkQ">
+                            <rect key="frame" x="88.5" y="86.5" width="240" height="199"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading-menu-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="muY-JD-1oa">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="240" id="56z-EE-0ox"/>
+                                        <constraint firstAttribute="height" constant="128" id="a1A-VL-EqJ"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fetching menu..  Please wait" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLP-tS-ZrA">
+                                    <rect key="frame" x="56.5" y="158" width="127" height="41"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="YMS-mv-9f8"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="b33-0B-OkQ" firstAttribute="centerX" secondItem="3yp-DX-8ME" secondAttribute="centerX" id="LXk-76-ek2"/>
+                        <constraint firstItem="b33-0B-OkQ" firstAttribute="centerY" secondItem="3yp-DX-8ME" secondAttribute="centerY" id="s3m-eG-4QH"/>
+                    </constraints>
+                </view>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZB-GM-bGd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2808.6956521739135" y="75"/>

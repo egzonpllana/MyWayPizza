@@ -9,6 +9,10 @@ import UIKit
 
 class RestaurantMenuTableViewController: UITableViewController {
 
+    // MARK: - Outlets
+    
+    @IBOutlet var emptyView: UIView!
+
     // MARK: - Properties
 
     var isFavourite: Bool = false // should be inside viewModel
