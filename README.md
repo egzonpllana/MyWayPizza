@@ -5,7 +5,7 @@
     specification using Swift. 
     
 ## Preview ##
-
+![1-4-2](https://user-images.githubusercontent.com/27929436/137992988-ec9c98f2-c022-496e-a0b9-29ea6560d692.png)
 
 ## Challenge ##
     Api:
