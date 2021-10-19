@@ -96,7 +96,7 @@
 				526A1465271E194900AF77B6 /* Statics */,
 				526A1453271DF8F400AF77B6 /* Helpers */,
 				526A1456271DF96B00AF77B6 /* GUI */,
-				526A1440271DEF7000AF77B6 /* Assets.xcassets */,
+				5276A9F4271F45130072C9D3 /* Resources */,
 				526A1442271DEF7000AF77B6 /* LaunchScreen.storyboard */,
 			);
 			path = MyWayPizza;
@@ -164,6 +164,14 @@
 				526A1466271E195A00AF77B6 /* SystemIcons.swift */,
 			);
 			path = Statics;
+			sourceTree = "<group>";
+		};
+		5276A9F4271F45130072C9D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				526A1440271DEF7000AF77B6 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		6771153B6E247327A74E3F9F /* Frameworks */ = {

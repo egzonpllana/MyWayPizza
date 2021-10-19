@@ -10,6 +10,7 @@ import UIKit
 class MenuItemDetailsViewController: UIViewController {
 
     // MARK: - Outlets
+
     @IBOutlet private weak var restaurantBackgroundImageView: UIImageView!
     @IBOutlet private weak var itemImageView: UIImageView!
     @IBOutlet private weak var itemNameLabel: UILabel!
