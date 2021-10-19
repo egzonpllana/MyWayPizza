@@ -1,14 +1,13 @@
 # My Way Pizza #
 
 # Swifty Protocol-Oriented with Dependency Injection #
-    My Way Pizza - iOS App.
+    Building an iOS app for ordering Pizza with mocked APIs from the Apiary specification using Swift. 
     
 ## Preview ##
 
 
 ## Challenge ##
     Api:
-    • Your task is to build an iOS app for ordering Pizza with mocked APIs from the Apiary specification using Swift. 
     • The API is static so no matter what you send you will get the same answer.   
     • You can find the API’s here: https://pizzaapp.docs.apiary.io/
     
