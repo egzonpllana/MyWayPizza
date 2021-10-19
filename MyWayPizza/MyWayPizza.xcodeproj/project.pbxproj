@@ -40,6 +40,8 @@
 		5276AA17271F4E780072C9D3 /* UITableView+dataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276AA16271F4E780072C9D3 /* UITableView+dataSource.swift */; };
 		5276AA19271F4F350072C9D3 /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276AA18271F4F350072C9D3 /* RestaurantViewModel.swift */; };
 		5276AA1B271F51F30072C9D3 /* StaticImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276AA1A271F51F30072C9D3 /* StaticImages.swift */; };
+		5276AA1D271F564D0072C9D3 /* MenuItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276AA1C271F564D0072C9D3 /* MenuItemModel.swift */; };
+		5276AA1F271F56580072C9D3 /* MenuItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276AA1E271F56580072C9D3 /* MenuItemViewModel.swift */; };
 		52F93629271E277C00B63F3A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 52F93628271E277C00B63F3A /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		5276AA16271F4E780072C9D3 /* UITableView+dataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+dataSource.swift"; sourceTree = "<group>"; };
 		5276AA18271F4F350072C9D3 /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
 		5276AA1A271F51F30072C9D3 /* StaticImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticImages.swift; sourceTree = "<group>"; };
+		5276AA1C271F564D0072C9D3 /* MenuItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemModel.swift; sourceTree = "<group>"; };
+		5276AA1E271F56580072C9D3 /* MenuItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemViewModel.swift; sourceTree = "<group>"; };
 		52F93628271E277C00B63F3A /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		E5F7170556B7985A55879CF9 /* Pods-MyWayPizza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWayPizza.release.xcconfig"; path = "Target Support Files/Pods-MyWayPizza/Pods-MyWayPizza.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -252,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				5276AA0B271F467E0072C9D3 /* RestaurantModel.swift */,
+				5276AA1C271F564D0072C9D3 /* MenuItemModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				5276AA18271F4F350072C9D3 /* RestaurantViewModel.swift */,
+				5276AA1E271F56580072C9D3 /* MenuItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -430,7 +436,9 @@
 			files = (
 				526A1450271DF7A700AF77B6 /* RestaurantTableViewCell.swift in Sources */,
 				5276A9FB271F45D90072C9D3 /* DependencyInjector.swift in Sources */,
+				5276AA1F271F56580072C9D3 /* MenuItemViewModel.swift in Sources */,
 				5276AA13271F4A210072C9D3 /* APIConstants.swift in Sources */,
+				5276AA1D271F564D0072C9D3 /* MenuItemModel.swift in Sources */,
 				526A1438271DEF6E00AF77B6 /* AppDelegate.swift in Sources */,
 				522F2E81271ECB4400D127B1 /* UIRoundButton.swift in Sources */,
 				5276AA03271F461A0072C9D3 /* RestaurantService.swift in Sources */,

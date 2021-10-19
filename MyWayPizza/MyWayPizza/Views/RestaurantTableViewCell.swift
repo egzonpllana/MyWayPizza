@@ -24,8 +24,9 @@ class RestaurantTableViewCell: UITableViewCell {
         firstAddressLabel.text = viewModel.address1
         secondAddressLabel.text = viewModel.address2
 
-        // static, missing on api, would be nice to have these..
+        // Note: static, missing on api,
+        // would be nice to have these from server..
         coverImageView.image = viewModel.id == 1 ? StaticImages.restaurant1.image : StaticImages.restaurant2.image
-        ratingLabel.text = viewModel.id == 1 ? String(4.7) : String(4.3)
+        ratingLabel.text = (viewModel.id == 1) ? ("★ " + String(4.7)) : ("★ " + String(4.3))
     }
 }

@@ -18,4 +18,26 @@ class MWPRestaurantService: RestaurantService {
             }
         }
     }
+
+    func getRestaurant(withId id: Int, completion: @escaping (Result<RestaurantModel, Error>) -> Void) {
+        APIClient.getRestaurant(withId: id) { (result) in
+            switch result {
+            case .success(let restaurant):
+                completion(.success(restaurant))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
+
+    func getRestaurantMenu(withId id: Int, completion: @escaping (Result<[MenuItemModel], Error>) -> Void) {
+        APIClient.getRestaurantMenu(withId: id) { (result) in
+            switch result {
+            case .success(let restaurant):
+                completion(.success(restaurant))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
+    }
 }

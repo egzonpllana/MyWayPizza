@@ -17,4 +17,23 @@ protocol RestaurantService {
     /// - No parameters needed.
     func getRestaurantsList(completion: @escaping (Result<[RestaurantModel], Error>) -> Void)
 
+    /// Get restaurant details.
+    ///
+    /// ```
+    /// getRestaurant()
+    /// ```
+    ///
+    /// - Parameters:
+    /// - restaurant id
+    func getRestaurant(withId id: Int, completion: @escaping (Result<RestaurantModel, Error>) -> Void)
+
+    /// Get restaurant menu.
+    ///
+    /// ```
+    /// getRestaurant()
+    /// ```
+    ///
+    /// - Parameters:
+    /// - restaurant id
+    func getRestaurantMenu(withId id: Int, completion: @escaping (Result<[MenuItemModel], Error>) -> Void)
 }

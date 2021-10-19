@@ -21,4 +21,12 @@ class APIClient {
     static func getRestaurants(completion: @escaping (Result<[RestaurantModel], AFError>) -> Void) {
         performRequest(route: APIRouter.restaurants, completion: completion)
     }
+
+    static func getRestaurant(withId id: Int, completion: @escaping (Result<RestaurantModel, AFError>) -> Void) {
+        performRequest(route: APIRouter.restaurantById(id: id), completion: completion)
+    }
+
+    static func getRestaurantMenu(withId id: Int, completion: @escaping (Result<[MenuItemModel], AFError>) -> Void) {
+        performRequest(route: APIRouter.restaurantMenu(restaurantId: id), completion: completion)
+    }
 }

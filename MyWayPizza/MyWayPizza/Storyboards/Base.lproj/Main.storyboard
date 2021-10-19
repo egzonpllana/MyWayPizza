@@ -99,7 +99,7 @@
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kUH-Y4-HTc">
                                                                             <rect key="frame" x="0.0" y="0.0" width="65" height="40"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZP-mo-Iwj">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZP-mo-Iwj">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="65" height="18"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -113,8 +113,8 @@
                                                                                 </label>
                                                                             </subviews>
                                                                         </stackView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSd-lC-fhx">
-                                                                            <rect key="frame" x="237" y="0.0" width="27" height="44.5"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★ 4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSd-lC-fhx">
+                                                                            <rect key="frame" x="215" y="0.0" width="49" height="44.5"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                                             <color key="textColor" red="0.96470588239999999" green="0.78039215689999997" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                             <nil key="highlightedColor"/>
@@ -326,7 +326,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="0HU-RQ-C1i">
                                                                     <rect key="frame" x="0.0" y="43" width="55.5" height="43"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIf-a1-8VS">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topping" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIf-a1-8VS">
                                                                             <rect key="frame" x="0.0" y="0.0" width="55.5" height="21.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -370,6 +370,12 @@
                                         <constraint firstAttribute="trailing" secondItem="QoJ-SI-02O" secondAttribute="trailing" constant="16" id="fID-lz-Fqk"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="coverImageView" destination="yZ6-oc-Ike" id="JDv-Ic-wBv"/>
+                                    <outlet property="nameLabel" destination="K02-8b-Dqo" id="Rab-1t-Rb8"/>
+                                    <outlet property="rankLabel" destination="vuC-td-hZy" id="8tg-nr-qPE"/>
+                                    <outlet property="toppingsLabel" destination="iIf-a1-8VS" id="zHX-mL-giV"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -386,6 +392,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="emptyView" destination="3yp-DX-8ME" id="h2M-ao-nyX"/>
+                        <outlet property="firstLocationLabel" destination="UWA-vq-UZ3" id="pXU-LJ-Dwb"/>
+                        <outlet property="restaurantNameLabel" destination="iJ2-C8-M4F" id="UFT-SP-74n"/>
+                        <outlet property="secondLocationLabel" destination="LnX-yh-cdS" id="YF6-hg-mkL"/>
                         <segue destination="uEJ-ff-Qbq" kind="show" identifier="restaurantItemDetails" id="hPG-zR-mBV"/>
                     </connections>
                 </tableViewController>

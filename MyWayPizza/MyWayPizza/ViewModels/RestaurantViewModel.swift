@@ -15,12 +15,12 @@ struct RestaurantViewModel {
     let latitude: Double
     let longitude: Double
 
-    init(restaurantModel: RestaurantModel) {
-        self.id = restaurantModel.id
-        self.name = restaurantModel.name
-        self.address1 = restaurantModel.address1
-        self.address2 = restaurantModel.address2
-        self.latitude = restaurantModel.latitude
-        self.longitude = restaurantModel.longitude
+    init(withModel model: RestaurantModel) {
+        self.id = model.id
+        self.name = model.name
+        self.address1 = model.address1
+        self.address2 = model.address2
+        self.latitude = model.latitude
+        self.longitude = model.longitude
     }
 }

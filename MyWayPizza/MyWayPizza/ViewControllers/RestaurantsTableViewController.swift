@@ -58,7 +58,7 @@ class RestaurantsTableViewController: UITableViewController, HasDependencies {
             guard let self = self else { return }
             switch result {
             case .success(let restaurants):
-                let viewModels = restaurants.map { RestaurantViewModel(restaurantModel: $0) }
+                let viewModels = restaurants.map { RestaurantViewModel(withModel: $0) }
                 self.tableViewDataSourceState = .populated(viewModels)
             case .failure(let error):
                 assertionFailure(error.localizedDescription)
@@ -108,8 +108,8 @@ extension RestaurantsTableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.tableView.deselectRow(at: indexPath, animated: true)
-        // sender: viewModel
-        self.performSegue(withIdentifier: .restaurantMenu, sender: nil)
+        let viewModel = tableViewDataSourceState.currentItems[indexPath.row]
+        self.performSegue(withIdentifier: .restaurantMenu, sender: viewModel)
     }
 }
 
@@ -124,8 +124,6 @@ extension RestaurantsTableViewController: SegueHandlerType {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segueIdentifierForSegue(segue: segue) {
         case .restaurantMenu:
-            print("Segue -> restaurantMenu")
-            /*
             guard let restaurantMenuTableViewController = segue.destination as? RestaurantMenuTableViewController else {
                 assertionFailure()
                 return
@@ -136,8 +134,7 @@ extension RestaurantsTableViewController: SegueHandlerType {
                 return
             }
 
-             restaurantMenuTableViewController.restaurant = restaurant
-             */
+            restaurantMenuTableViewController.restaurantViewModel = restaurant
         }
     }
 }
