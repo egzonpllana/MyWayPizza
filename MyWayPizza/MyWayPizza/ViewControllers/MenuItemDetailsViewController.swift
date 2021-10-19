@@ -60,5 +60,4 @@ class MenuItemDetailsViewController: UIViewController {
     @IBAction func placeOrderPressed(_ sender: Any) {
 
     }
-
 }

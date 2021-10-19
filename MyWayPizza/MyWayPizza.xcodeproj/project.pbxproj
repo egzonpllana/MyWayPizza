@@ -88,9 +88,8 @@
 		526A1436271DEF6E00AF77B6 /* MyWayPizza */ = {
 			isa = PBXGroup;
 			children = (
+				526A1445271DEF7000AF77B6 /* Info.plist */,
 				526A144B271DEFDA00AF77B6 /* AppFiles */,
-				526A1437271DEF6E00AF77B6 /* AppDelegate.swift */,
-				526A1439271DEF6E00AF77B6 /* SceneDelegate.swift */,
 				526A144E271DF78700AF77B6 /* Views */,
 				526A144D271DF14500AF77B6 /* ViewControllers */,
 				526A144C271DF13500AF77B6 /* Storyboards */,
@@ -99,7 +98,6 @@
 				526A1456271DF96B00AF77B6 /* GUI */,
 				526A1440271DEF7000AF77B6 /* Assets.xcassets */,
 				526A1442271DEF7000AF77B6 /* LaunchScreen.storyboard */,
-				526A1445271DEF7000AF77B6 /* Info.plist */,
 			);
 			path = MyWayPizza;
 			sourceTree = "<group>";
@@ -107,6 +105,8 @@
 		526A144B271DEFDA00AF77B6 /* AppFiles */ = {
 			isa = PBXGroup;
 			children = (
+				526A1437271DEF6E00AF77B6 /* AppDelegate.swift */,
+				526A1439271DEF6E00AF77B6 /* SceneDelegate.swift */,
 			);
 			path = AppFiles;
 			sourceTree = "<group>";
