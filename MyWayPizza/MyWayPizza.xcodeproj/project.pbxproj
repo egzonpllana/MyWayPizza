@@ -42,6 +42,7 @@
 		5276AA1B271F51F30072C9D3 /* StaticImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276AA1A271F51F30072C9D3 /* StaticImages.swift */; };
 		5276AA1D271F564D0072C9D3 /* MenuItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276AA1C271F564D0072C9D3 /* MenuItemModel.swift */; };
 		5276AA1F271F56580072C9D3 /* MenuItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276AA1E271F56580072C9D3 /* MenuItemViewModel.swift */; };
+		5276AA21271F6A640072C9D3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5276AA20271F6A640072C9D3 /* README.md */; };
 		52F93629271E277C00B63F3A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 52F93628271E277C00B63F3A /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		5276AA1A271F51F30072C9D3 /* StaticImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticImages.swift; sourceTree = "<group>"; };
 		5276AA1C271F564D0072C9D3 /* MenuItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemModel.swift; sourceTree = "<group>"; };
 		5276AA1E271F56580072C9D3 /* MenuItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemViewModel.swift; sourceTree = "<group>"; };
+		5276AA20271F6A640072C9D3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		52F93628271E277C00B63F3A /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		E5F7170556B7985A55879CF9 /* Pods-MyWayPizza.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWayPizza.release.xcconfig"; path = "Target Support Files/Pods-MyWayPizza/Pods-MyWayPizza.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +105,7 @@
 		526A142B271DEF6E00AF77B6 = {
 			isa = PBXGroup;
 			children = (
+				5276AA20271F6A640072C9D3 /* README.md */,
 				52F93628271E277C00B63F3A /* .swiftlint.yml */,
 				526A1436271DEF6E00AF77B6 /* MyWayPizza */,
 				526A1435271DEF6E00AF77B6 /* Products */,
@@ -362,6 +365,7 @@
 				52F93629271E277C00B63F3A /* .swiftlint.yml in Resources */,
 				5276A9F9271F45C40072C9D3 /* DEPENDENCIES.md in Resources */,
 				526A1444271DEF7000AF77B6 /* LaunchScreen.storyboard in Resources */,
+				5276AA21271F6A640072C9D3 /* README.md in Resources */,
 				5276AA0E271F49F20072C9D3 /* API.md in Resources */,
 				526A1441271DEF7000AF77B6 /* Assets.xcassets in Resources */,
 				526A143F271DEF6E00AF77B6 /* Main.storyboard in Resources */,
