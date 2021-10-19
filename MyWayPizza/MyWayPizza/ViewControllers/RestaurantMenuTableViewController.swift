@@ -138,7 +138,6 @@ extension RestaurantMenuTableViewController: SegueHandlerType {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segueIdentifierForSegue(segue: segue) {
         case .restaurantItemDetails:
-            print("Segue -> restaurantItemDetails")
             guard let menuItemDetailsViewController = segue.destination as? MenuItemDetailsViewController else {
                 assertionFailure()
                 return
