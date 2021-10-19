@@ -11,16 +11,16 @@ struct MenuItemViewModel {
     let id: Int
     let category: String
     let name: String
-    let topping: [String]?
+    let topping: String
     let price: Double
-    let rank: Int?
+    let rank: Int
 
     init(withModel model: MenuItemModel) {
         self.id = model.id
         self.category = model.category
         self.name = model.name
-        self.topping = model.topping
+        self.topping = model.topping?.joined(separator: ", ") ?? "No topping yet."
         self.price = model.price
-        self.rank = model.rank
+        self.rank = model.rank ?? 0
     }
 }

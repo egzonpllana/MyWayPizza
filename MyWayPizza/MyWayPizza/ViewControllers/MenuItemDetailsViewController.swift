@@ -7,6 +7,11 @@
 
 import UIKit
 
+private enum StringLiterals: String {
+    case total = "Total "
+    case spaceAndKR = " kr"
+}
+
 class MenuItemDetailsViewController: UIViewController {
 
     // MARK: - Outlets
@@ -16,14 +21,17 @@ class MenuItemDetailsViewController: UIViewController {
     @IBOutlet private weak var itemNameLabel: UILabel!
     @IBOutlet private weak var categoryLabel: UILabel!
     @IBOutlet private weak var toppingLabel: UILabel!
-    @IBOutlet weak var itemsCountLabel: UILabel!
+    @IBOutlet private weak var itemsCountLabel: UILabel!
+    @IBOutlet private weak var totalPriceLabel: UILabel!
 
     // MARK: - Properties
 
+    var menuItemViewModel: MenuItemViewModel!
     var isFavourite: Bool = false // should be inside viewModel
     var itemsCounter: Int = 1 {
         didSet {
             itemsCountLabel.text = String(itemsCounter)
+            totalPriceLabel.text = StringLiterals.total.rawValue + String(Double(itemsCounter) * menuItemViewModel.price) + StringLiterals.spaceAndKR.rawValue
         }
     }
 
@@ -34,10 +42,26 @@ class MenuItemDetailsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
 
+        // Setup UI
+        setupUI()
+
+        // Configure navigation bar items
         addFavouriteNavigationItem()
     }
 
     // MARK: - Methods
+
+    private func setupUI() {
+
+        itemNameLabel.text = menuItemViewModel.name
+        categoryLabel.text = menuItemViewModel.category
+        toppingLabel.text = menuItemViewModel.topping
+        totalPriceLabel.text = "Total: " + String(menuItemViewModel.price) + "kr"
+
+        // Loading static images
+        restaurantBackgroundImageView.image = StaticImages.restaurant1.image
+        itemImageView.image = StaticImages.meal1.image
+    }
 
     private func addFavouriteNavigationItem() {
         let buttonImage = isFavourite ? SystemIcons.heartFill.image : SystemIcons.heart.image

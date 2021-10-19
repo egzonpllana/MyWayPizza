@@ -139,8 +139,7 @@ extension RestaurantMenuTableViewController: SegueHandlerType {
         switch segueIdentifierForSegue(segue: segue) {
         case .restaurantItemDetails:
             print("Segue -> restaurantItemDetails")
-            /*
-            guard let restaurantMenuTableViewController = segue.destination as? RestaurantMenuTableViewController else {
+            guard let menuItemDetailsViewController = segue.destination as? MenuItemDetailsViewController else {
                 assertionFailure()
                 return
             }
@@ -150,8 +149,7 @@ extension RestaurantMenuTableViewController: SegueHandlerType {
                 return
             }
 
-             restaurantMenuTableViewController.item = menuItem
-             */
+            menuItemDetailsViewController.menuItemViewModel = menuItem
         }
     }
 }

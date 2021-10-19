@@ -13,14 +13,14 @@ class MenuItemTableViewCell: UITableViewCell {
 
     @IBOutlet private weak var coverImageView: UIImageView!
     @IBOutlet private weak var nameLabel: UILabel!
-    @IBOutlet private weak var toppingsLabel: UILabel!
+    @IBOutlet private weak var toppingLabel: UILabel!
     @IBOutlet private weak var rankLabel: UILabel!
 
     // MARK: - Methods
 
     func configure(withViewModel viewModel: MenuItemViewModel) {
         nameLabel.text = viewModel.name
-        toppingsLabel.text = viewModel.topping?.joined(separator: ", ") ?? "No toppings"
+        toppingLabel.text = viewModel.topping
 
         // Note: static, missing on api,
         // would be nice to have these from server..
@@ -28,10 +28,6 @@ class MenuItemTableViewCell: UITableViewCell {
         coverImageView.image = UIImage(named: imageName)
 
         // Get rank, if any
-        if let rank = viewModel.rank {
-            rankLabel.text = "★ " + String(rank)
-        } else {
-            rankLabel.text = "No rank yet."
-        }
+        rankLabel.text = viewModel.rank != 0 ? "★ " + String(viewModel.rank) : "No rating yet."
     }
 }

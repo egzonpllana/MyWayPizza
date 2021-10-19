@@ -374,7 +374,7 @@
                                     <outlet property="coverImageView" destination="yZ6-oc-Ike" id="JDv-Ic-wBv"/>
                                     <outlet property="nameLabel" destination="K02-8b-Dqo" id="Rab-1t-Rb8"/>
                                     <outlet property="rankLabel" destination="vuC-td-hZy" id="8tg-nr-qPE"/>
-                                    <outlet property="toppingsLabel" destination="iIf-a1-8VS" id="zHX-mL-giV"/>
+                                    <outlet property="toppingLabel" destination="iIf-a1-8VS" id="U1H-Xi-aDj"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -761,6 +761,7 @@
                         <outlet property="itemsCountLabel" destination="KgW-en-TIh" id="njn-M0-pp3"/>
                         <outlet property="restaurantBackgroundImageView" destination="HSl-7W-2NP" id="z1c-9H-CSx"/>
                         <outlet property="toppingLabel" destination="gJA-Ug-vg0" id="kNP-ya-pSM"/>
+                        <outlet property="totalPriceLabel" destination="W0U-HE-aCr" id="Yf0-j3-D98"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AiY-Vk-pEu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
