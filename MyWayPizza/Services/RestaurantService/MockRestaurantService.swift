@@ -9,7 +9,8 @@ import Foundation
 
 class MockRestaurantService: RestaurantService {
     func getRestaurantsList(completion: @escaping (Result<[RestaurantModel], Error>) -> Void) {
-        // return mock object
+        let restaurant = RestaurantModel(id: 1, name: "Pizza Hut", address1: "Address 1", address2: "Address 2", latitude: 80.00, longitude: 90.00)
+        completion(.success([restaurant]))
     }
 
     func getRestaurant(withId id: Int, completion: @escaping (Result<RestaurantModel, Error>) -> Void) {

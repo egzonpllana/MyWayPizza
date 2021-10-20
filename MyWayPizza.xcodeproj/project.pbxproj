@@ -12,6 +12,7 @@
 		522F2E85271EDA9E00D127B1 /* MenuItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2E84271EDA9E00D127B1 /* MenuItemDetailsViewController.swift */; };
 		524F728C271FFC360041A4F1 /* RestaurantViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F728B271FFC360041A4F1 /* RestaurantViewModelTests.swift */; };
 		524F728E272000340041A4F1 /* MenuItemViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F728D272000340041A4F1 /* MenuItemViewModelTests.swift */; };
+		524F7291272014F80041A4F1 /* RestaurantServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F7290272014F80041A4F1 /* RestaurantServiceTests.swift */; };
 		526A1438271DEF6E00AF77B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A1437271DEF6E00AF77B6 /* AppDelegate.swift */; };
 		526A143A271DEF6E00AF77B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A1439271DEF6E00AF77B6 /* SceneDelegate.swift */; };
 		526A143F271DEF6E00AF77B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526A143D271DEF6E00AF77B6 /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 		524F7280271FFBFE0041A4F1 /* MyWayPizzaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWayPizzaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		524F728B271FFC360041A4F1 /* RestaurantViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModelTests.swift; sourceTree = "<group>"; };
 		524F728D272000340041A4F1 /* MenuItemViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemViewModelTests.swift; sourceTree = "<group>"; };
+		524F7290272014F80041A4F1 /* RestaurantServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantServiceTests.swift; sourceTree = "<group>"; };
 		526A1434271DEF6E00AF77B6 /* MyWayPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWayPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		526A1437271DEF6E00AF77B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		526A1439271DEF6E00AF77B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				524F7289271FFC130041A4F1 /* ViewModels */,
+				524F728F272013A50041A4F1 /* Services */,
 			);
 			path = MyWayPizzaTests;
 			sourceTree = "<group>";
@@ -139,6 +142,14 @@
 				524F728D272000340041A4F1 /* MenuItemViewModelTests.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		524F728F272013A50041A4F1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				524F7290272014F80041A4F1 /* RestaurantServiceTests.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		526A142B271DEF6E00AF77B6 = {
@@ -511,6 +522,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				524F728E272000340041A4F1 /* MenuItemViewModelTests.swift in Sources */,
+				524F7291272014F80041A4F1 /* RestaurantServiceTests.swift in Sources */,
 				524F728C271FFC360041A4F1 /* RestaurantViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
