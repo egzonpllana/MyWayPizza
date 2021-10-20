@@ -114,8 +114,8 @@
                                                                             </subviews>
                                                                         </stackView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★ 4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSd-lC-fhx">
-                                                                            <rect key="frame" x="215" y="0.0" width="49" height="44.5"/>
-                                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                            <rect key="frame" x="222" y="0.0" width="42" height="44.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                                             <color key="textColor" red="0.96470588239999999" green="0.78039215689999997" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
