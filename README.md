@@ -54,6 +54,9 @@
 ### MVVM ###
 
 ## Planning app flow and architecture ##
-    
+    Given assignment: Mon, 18 Oct (2021) at 10am
+    Finished assignment: Wed, 20 Oct (2021) at 11 am.
+
 ![IMG_2444](https://user-images.githubusercontent.com/27929436/138071025-1bb60a90-0fef-482c-b5a3-23493938431d.jpg)
+
     "A goal without a plan is just a wish" -- Antoine de Saint - Exupéry
