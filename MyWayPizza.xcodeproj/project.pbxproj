@@ -10,6 +10,7 @@
 		22F6590F96C3D49F7309B404 /* Pods_MyWayPizza.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B001E97E1BE68EA285C7EF /* Pods_MyWayPizza.framework */; };
 		522F2E81271ECB4400D127B1 /* UIRoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2E80271ECB4400D127B1 /* UIRoundButton.swift */; };
 		522F2E85271EDA9E00D127B1 /* MenuItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F2E84271EDA9E00D127B1 /* MenuItemDetailsViewController.swift */; };
+		524F728C271FFC360041A4F1 /* RestaurantViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F728B271FFC360041A4F1 /* RestaurantViewModelTests.swift */; };
 		526A1438271DEF6E00AF77B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A1437271DEF6E00AF77B6 /* AppDelegate.swift */; };
 		526A143A271DEF6E00AF77B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A1439271DEF6E00AF77B6 /* SceneDelegate.swift */; };
 		526A143F271DEF6E00AF77B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526A143D271DEF6E00AF77B6 /* Main.storyboard */; };
@@ -46,11 +47,23 @@
 		52F93629271E277C00B63F3A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 52F93628271E277C00B63F3A /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		524F7284271FFBFE0041A4F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526A142C271DEF6E00AF77B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 526A1433271DEF6E00AF77B6;
+			remoteInfo = MyWayPizza;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		02B001E97E1BE68EA285C7EF /* Pods_MyWayPizza.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWayPizza.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0677FC5A6641DC638A1483 /* Pods-MyWayPizza.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWayPizza.debug.xcconfig"; path = "Target Support Files/Pods-MyWayPizza/Pods-MyWayPizza.debug.xcconfig"; sourceTree = "<group>"; };
 		522F2E80271ECB4400D127B1 /* UIRoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRoundButton.swift; sourceTree = "<group>"; };
 		522F2E84271EDA9E00D127B1 /* MenuItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailsViewController.swift; sourceTree = "<group>"; };
+		524F7280271FFBFE0041A4F1 /* MyWayPizzaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWayPizzaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		524F728B271FFC360041A4F1 /* RestaurantViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModelTests.swift; sourceTree = "<group>"; };
 		526A1434271DEF6E00AF77B6 /* MyWayPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWayPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		526A1437271DEF6E00AF77B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		526A1439271DEF6E00AF77B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +104,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		524F727D271FFBFE0041A4F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		526A1431271DEF6E00AF77B6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,12 +122,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		524F7281271FFBFE0041A4F1 /* MyWayPizzaTests */ = {
+			isa = PBXGroup;
+			children = (
+				524F7289271FFC130041A4F1 /* ViewModels */,
+			);
+			path = MyWayPizzaTests;
+			sourceTree = "<group>";
+		};
+		524F7289271FFC130041A4F1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				524F728B271FFC360041A4F1 /* RestaurantViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		526A142B271DEF6E00AF77B6 = {
 			isa = PBXGroup;
 			children = (
 				5276AA20271F6A640072C9D3 /* README.md */,
 				52F93628271E277C00B63F3A /* .swiftlint.yml */,
 				526A1436271DEF6E00AF77B6 /* MyWayPizza */,
+				524F7281271FFBFE0041A4F1 /* MyWayPizzaTests */,
 				526A1435271DEF6E00AF77B6 /* Products */,
 				9D32B23A6556E3CB29B8172C /* Pods */,
 				6771153B6E247327A74E3F9F /* Frameworks */,
@@ -118,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				526A1434271DEF6E00AF77B6 /* MyWayPizza.app */,
+				524F7280271FFBFE0041A4F1 /* MyWayPizzaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -304,6 +342,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		524F727F271FFBFE0041A4F1 /* MyWayPizzaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 524F7288271FFBFE0041A4F1 /* Build configuration list for PBXNativeTarget "MyWayPizzaTests" */;
+			buildPhases = (
+				524F727C271FFBFE0041A4F1 /* Sources */,
+				524F727D271FFBFE0041A4F1 /* Frameworks */,
+				524F727E271FFBFE0041A4F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				524F7285271FFBFE0041A4F1 /* PBXTargetDependency */,
+			);
+			name = MyWayPizzaTests;
+			productName = MyWayPizzaTests;
+			productReference = 524F7280271FFBFE0041A4F1 /* MyWayPizzaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		526A1433271DEF6E00AF77B6 /* MyWayPizza */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 526A1448271DEF7000AF77B6 /* Build configuration list for PBXNativeTarget "MyWayPizza" */;
@@ -334,6 +390,11 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					524F727F271FFBFE0041A4F1 = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+						TestTargetID = 526A1433271DEF6E00AF77B6;
+					};
 					526A1433271DEF6E00AF77B6 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -353,11 +414,19 @@
 			projectRoot = "";
 			targets = (
 				526A1433271DEF6E00AF77B6 /* MyWayPizza */,
+				524F727F271FFBFE0041A4F1 /* MyWayPizzaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		524F727E271FFBFE0041A4F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		526A1432271DEF6E00AF77B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -434,6 +503,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		524F727C271FFBFE0041A4F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524F728C271FFC360041A4F1 /* RestaurantViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		526A1430271DEF6E00AF77B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -472,6 +549,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		524F7285271FFBFE0041A4F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 526A1433271DEF6E00AF77B6 /* MyWayPizza */;
+			targetProxy = 524F7284271FFBFE0041A4F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		526A143D271DEF6E00AF77B6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -492,6 +577,55 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		524F7286271FFBFE0041A4F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YUQDS8QJFD;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nativecoders.MyWayPizzaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyWayPizza.app/MyWayPizza";
+			};
+			name = Debug;
+		};
+		524F7287271FFBFE0041A4F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YUQDS8QJFD;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nativecoders.MyWayPizzaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyWayPizza.app/MyWayPizza";
+			};
+			name = Release;
+		};
 		526A1446271DEF7000AF77B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -669,6 +803,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		524F7288271FFBFE0041A4F1 /* Build configuration list for PBXNativeTarget "MyWayPizzaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524F7286271FFBFE0041A4F1 /* Debug */,
+				524F7287271FFBFE0041A4F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		526A142F271DEF6E00AF77B6 /* Build configuration list for PBXProject "MyWayPizza" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
