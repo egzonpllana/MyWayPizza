@@ -31,10 +31,6 @@ extension MenuItemViewModel {
     }
 
     var readableRank: String {
-        if let rank = self.rank {
-            return "★ " + String(rank)
-        } else {
-            return "No rating yet."
-        }
+        return (self.rank != nil) ? ("★ " + String(self.rank!)) : "No rating yet."
     }
 }
