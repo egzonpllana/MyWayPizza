@@ -20,16 +20,12 @@ class MenuItemTableViewCell: UITableViewCell {
 
     func configure(withViewModel viewModel: MenuItemViewModel) {
         nameLabel.text = viewModel.name
-        // TODO: move to view model as computed property: readableTopping
         toppingLabel.text = viewModel.readableTopping
 
         // Note: static, missing on api,
         // would be nice to have these from server..
         let imageName = "meal" + String(viewModel.id) // ex. meal1
         coverImageView.image = UIImage(named: imageName)
-
-        // Get rank, if any
-        // TODO: move to view model as computed property: readableRating
-        rankLabel.text = viewModel.rank != 0 ? "★ " + String(viewModel.rank) : "No rating yet."
+        rankLabel.text = viewModel.readableRank
     }
 }
