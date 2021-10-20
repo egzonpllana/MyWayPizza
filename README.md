@@ -51,11 +51,9 @@
 ## Application Design Pattern ##
 
 ### Swifty Protocol-Oriented Dependency Injection ###
-
-    • The key to dependency injection is protocols – from there sprouts many variations,
-    flavours, and techniques.
-    • Battle-tested DI implementation with no outside dependencies or magic. 
-    • It combines protocol extension and type erasure to give you a solid, flexible dependency
-    injection that works great with unit test and even frameworks.
-    
 ### MVVM ###
+
+## Planning app flow and architecture ##
+    
+![IMG_2444](https://user-images.githubusercontent.com/27929436/138071025-1bb60a90-0fef-482c-b5a3-23493938431d.jpg)
+    "A goal without a plan is just a wish" -- Antoine de Saint - Exupéry
