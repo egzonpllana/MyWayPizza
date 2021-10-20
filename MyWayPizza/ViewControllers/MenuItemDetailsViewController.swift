@@ -55,7 +55,7 @@ class MenuItemDetailsViewController: UIViewController {
 
         itemNameLabel.text = menuItemViewModel.name
         categoryLabel.text = menuItemViewModel.category
-        toppingLabel.text = menuItemViewModel.topping
+        toppingLabel.text = menuItemViewModel.readableTopping
         totalPriceLabel.text = "Total: " + String(menuItemViewModel.price) + "kr"
 
         // Loading static images
