@@ -1,8 +1,13 @@
 # My Way Pizza #
-
-# Swifty Protocol-Oriented with Dependency Injection #
     Building an iOS app for ordering Pizza with mocked APIs from the Apiary 
     specification using Swift. 
+    
+# Swifty Protocol-Oriented with Dependency Injection #
+    Read the magic way of doing Dependency Injection, by Basem Emara:
+    http://basememara.com/swift-protocol-oriented-dependency-injection/
+
+## Requiremets ##
+    Xcode 13.0 or newer is required to run the project.
     
 ## Preview ##
 ![1-4-2](https://user-images.githubusercontent.com/27929436/137992988-ec9c98f2-c022-496e-a0b9-29ea6560d692.png)
@@ -49,9 +54,8 @@
     • SwiftLint: https://github.com/realm/SwiftLint
 
 ## Application Design Pattern ##
-
-### Swifty Protocol-Oriented Dependency Injection ###
-### MVVM ###
+    Swifty Protocol-Oriented Dependency Injection
+    MVVM Architecure
 
 ## Planning app flow and architecture ##
     Given assignment: Mon, 18 Oct (2021) at 10am
