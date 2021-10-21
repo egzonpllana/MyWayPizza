@@ -6,7 +6,7 @@
     Read the magic way of doing Dependency Injection, by Basem Emara:
     http://basememara.com/swift-protocol-oriented-dependency-injection/
 
-## Requiremets ##
+## Requirements ##
     Xcode 13.0 or newer is required to run the project.
     
 ## Preview ##
