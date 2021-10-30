@@ -55,7 +55,7 @@
 
 ## Application Design Pattern ##
     Swifty Protocol-Oriented Dependency Injection
-    MVVM Architecure
+    MVVM Architecture
 
 ## Planning app flow and architecture ##
     Given assignment: Mon, 18 Oct (2021) at 10am
